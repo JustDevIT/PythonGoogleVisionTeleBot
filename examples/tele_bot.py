@@ -22,8 +22,6 @@ hideBoard = types.ReplyKeyboardHide()
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
-    print(message.chat.id)
-    print(message.message_id)
     bot.reply_to(message, """\
 Hi there, I am EchoBot.
 I am here to echo your kind words back to you. Just say anything nice and I'll say the exact same thing to you!\
